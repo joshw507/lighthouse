@@ -6,7 +6,7 @@ module.exports = {
               "http://localhost:8080/",
               
             ],
-            staticDistDir: "./site/dist/",
+            staticDistDir: "./gridsome/dist/",
           },
          upload: {
             target: 'temporary-public-storage',
