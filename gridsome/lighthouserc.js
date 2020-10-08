@@ -6,7 +6,7 @@ module.exports = {
               "http://localhost/",
               
             ],
-            staticDistDir: "./gridsome/src/",
+            startServerCommand: 'npm run start',
           },
          upload: {
             target: 'temporary-public-storage',
