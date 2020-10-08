@@ -3,10 +3,10 @@ module.exports = {
         collect: {
             // Just use local host lhci figures out the port for the ci build
             url: [
-              "http://localhost/",
+              "http://localhost:8080/",
               
             ],
-            startServerCommand: 'npm run start',
+            staticDistDir: './public',
           },
          upload: {
             target: 'temporary-public-storage',
