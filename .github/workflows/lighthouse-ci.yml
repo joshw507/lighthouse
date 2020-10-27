@@ -18,5 +18,4 @@ jobs:
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.4.x
-          lhci assert --config=./gridsome/lighthouserc.js
-          lhci autorun
+          lhci autorun --config=./gridsome/lighthouserc.js
