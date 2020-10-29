@@ -1,8 +1,8 @@
 name: lighthouse
 on:
   push:
-    Paths:
-      - "src/**"
+    paths:
+      - "gridsome/src/**"
 jobs:
   lhci:
     name: Lighthouse
