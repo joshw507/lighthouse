@@ -1,8 +1,8 @@
 name: lighthouse
 on:
   push:
-    branches:
-      - test
+    Paths:
+      - "src/**"
 jobs:
   lhci:
     name: Lighthouse
