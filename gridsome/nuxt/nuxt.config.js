@@ -10,17 +10,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  generate: {
-    ignore: [
-      '.nuxt', // buildDir
-      'static', // dir.static
-      'dist', // generate.dir
-      'node_modules',
-      '.**/*',
-      '.*',
-      'README.md',
-    ],
-  },
+  target: 'static',
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
