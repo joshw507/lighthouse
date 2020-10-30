@@ -2,7 +2,7 @@ name: CI
 on:
   push:
     paths:
-      - "gridsome/nuxt/**"
+      - "gridsome/**"
 jobs:
   lhci:
     name: Lighthouse
@@ -16,8 +16,9 @@ jobs:
       - name: npm install, build
         run: |
           cd gridsome
+          cd nuxt
           npm install
-          npm run build
+          npm run dev
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.4.x
