@@ -12,6 +12,10 @@ export default {
 
   target: 'static',
 
+  generate: {
+    pages: 'pages',
+  },
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
 
