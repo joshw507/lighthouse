@@ -1,4 +1,4 @@
-name: nuxt-lighthouse
+name: lighthouse-ci
 on:
   push:
     paths:
