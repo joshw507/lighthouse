@@ -2,7 +2,7 @@ name: lighthouse
 on:
   push:
     paths:
-      - "gridsome/src/**"
+      - "gridsome/nuxt/pages**"
 jobs:
   lhci:
     name: Lighthouse
@@ -14,10 +14,9 @@ jobs:
         with:
           node-version: 10.x
       - name: npm install, build
-        run: |
-          cd gridsome
-          npm install
-          npm run build
+      - run: npm ci
+      - run: npm test
+      - run: npm run generate
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.4.x
