@@ -15,7 +15,7 @@ jobs:
           cd gridsome
           cd nuxt
           npm install
-          nuxt generate
+          npm run generate
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.4.x
