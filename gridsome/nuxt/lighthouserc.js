@@ -2,7 +2,7 @@ module.exports = {
   ci: {
     collect: {
       // Just use local host lhci figures out the port for the ci build
-      url: ['http://localhost:8080/'],
+      url: ['http://localhost:45803/'],
       staticDistDir: './gridsome/nuxt/dist/',
     },
     upload: {
