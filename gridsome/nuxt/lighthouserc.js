@@ -10,11 +10,10 @@ module.exports = {
     },
     assert: {
       assertions: {
-        'categories:performance': ['warn', { minScore: 0.8 }], // warning for now due to Akamai..
-        'categories:accessibility': ['error', { minScore: 1 }],
-        'categories:seo': ['error', { minScore: 0.92 }], // 0.92 due to robots file.
-        'categories:best-practices': ['error', { minScore: 1 }],
-        'first-contentful-paint': ['warn', { maxNumericValue: 2000 }], // warning for now due to Akamai
+        'categories:performance': ['error', { minScore: 0.9 }],
+        'categories:accessibility': ['error', { minScore: 0.8 }],
+        'categories:best-practices': ['error', { minScore: 0.92 }],
+        'categories:seo': ['error', { minScore: 0.9 }],
       },
     },
   },
