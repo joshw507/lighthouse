@@ -13,7 +13,7 @@ export default {
   target: 'static',
 
   generate: {
-    pages: 'pages',
+    exclude: ['/about'],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
