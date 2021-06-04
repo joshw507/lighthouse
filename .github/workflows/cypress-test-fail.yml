@@ -1,0 +1,21 @@
+name: Run Cypress tests
+on: [push]
+jobs:
+  cypress-run:
+    name: Cypress
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 14.x
+      - name: npm install, build
+      run: |
+        npm install
+      - name: Take Action test
+        uses: cypress-io/github-action@v2
+        with:
+          command: npx cypress run --spec ""
+          
+     
