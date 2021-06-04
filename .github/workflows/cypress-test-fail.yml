@@ -16,6 +16,6 @@ jobs:
       - name: Take Action test
         uses: cypress-io/github-action@v2
         with:
-          command: npx cypress run --spec ""
+          command: npx cypress run --spec "cypress/integration/test/fail.spec.js"
           
      
